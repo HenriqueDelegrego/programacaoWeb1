@@ -1,0 +1,27 @@
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+tr:nth-last-child(1) {
+    background-color: rgb(210, 0, 0);
+}
+
+.destaque {
+    color: black;
+}
+
+.teste {
+    color: gray;
+}
+
+.midst {
+    text-align: center;
+}
+
+.rightfonte {
+    margin-left: 250px;
+}
+
+.rightinfo {
+    margin-left: 173px;
+}

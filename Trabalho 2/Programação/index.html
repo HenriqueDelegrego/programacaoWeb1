@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="indexstyle.css">
+
+
+</head>
+
+
+
+
+
+<body>
+
+
+
+  <header style="min-width: 1000px;">
+
+    <div>
+
+
+
+      <li>
+        <img onclick="redirect()" src="logo.png" alt="logo.png" width="150" />
+      </li>
+
+
+
+      <div class="flex">
+
+
+
+        <div class="dropup">
+
+          <button class="dropbtn widde"> <a class="link" href="produtos.html"> Celulares</button> </a>
+          <div class="dropup-content">
+            <a class="over" href="produtos.html">Samsung</a>
+            <a class="over" href="produtos.html">Iphone</a>
+          </div>
+
+        </div>
+
+        <div class="dropup">
+
+          <button class="dropbtn"> <a class="link" href="produtos.html">Games</button> </a>
+          <div class="dropup-content">
+            <a class="over" href="produtos.html">Consoles</a>
+            <a class="over" href="produtos.html">Jogos para Playstation</a>
+            <a class="over" href="produtos.html">Jogos para X Box</a>
+            <a class="over" href="produtos.html">Jogos para PC</a>
+          </div>
+
+        </div>
+        <div class="dropup">
+
+          <button class="dropbtn"> <a class="link" href="produtos.html">Automotivos</button> </a>
+
+          <div class="dropup-content">
+            <a class="over" href="produtos.html">Protetores de volante</a>
+            <a class="over" href="produtos.html">Pneus</a>
+            <a class="over" href="produtos.html">Óleos</a>
+          </div>
+        </div>
+
+
+        <div class="dropup">
+
+          <button class="dropbtn"> <a class="link" href="produtos.html">Livros</button> </a>
+          <div class="dropup-content">
+            <a class="over" href="produtos.html">Romance</a>
+            <a class="over" href="produtos.html">Aventura</a>
+            <a class="over" href="produtos.html">Ação</a>
+            <a class="over" href="produtos.html">História</a>
+          </div>
+
+
+        </div>
+
+
+        <div class="dropup">
+
+          <button class="dropbtn"> <a class="link" href="produtos.html">Eletrodomésticos</button> </a>
+          <div class="dropup-content">
+            <a class="over" href="produtos.html">Para a cozinha</a>
+            <a class="over" href="produtos.html">Para a lavanderia</a>
+            <a class="over" href="produtos.html">Para o banheiro</a>
+          </div>
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+
+      <li>
+        <div class="flex">
+          <button onclick="redirectToLogin()" class="flex button">Fazer Login</button>
+        </div>
+
+        <div class="flex">
+          <button class="flex button" onclick="redirectToSignUp()" class="flex">Cadastre-se</button>
+        </div>
+
+      </li>
+
+
+    </div>
+  </header>
+  </div>
+
+
+  <img style="margin-left: 100px;" onclick="redirectToProducts()" src="produtos.png" alt="produtos.png" width="1550" />
+  <img style="margin-left: 100px;" onclick="redirectToProducts()" src="produtos.png" alt="produtos.png" width="1550" />
+
+
+
+
+
+
+
+  <footer class="row ">
+    <div class="col-33">
+      <p>Compre pelo telefone: </p>
+      <p>0800 773 3838 </p>
+      <p>Horário de atendimento: </p>
+      <p>Segunda a Sábado </p>
+      <span>as 8:00 as 20:00</span>
+
+
+
+    </div>
+    <div class="col-33">
+      <p>Endereço:</p>
+      <p>Rua Adolfo Radunz</p>
+
+      <img onclick="redirectToMobile()" src="iphone.png" alt="pc.png" width="100" />
+      <a style="text-decoration: underline; color: white;" href="indexmobile.html">Versão mobile </a>
+
+    </div>
+    <div class="col-33">
+      <p>Cep:39032 1889</p>
+      <p>CNPJ: 7960950/0449-27</p>
+      <img onclick="redirect()" src="logo.png" alt="logo.png" width="75" />
+      <a style="text-decoration: underline;" class="footer-logo link" href="index.html"> Magazine Adolfo®</button> </a>
+    </div>
+
+
+  </footer>
+
+
+  <script>
+
+    function redirect() {
+
+      var s = window.location.href;
+      var s = s + ""
+      var num = s.lastIndexOf("/")
+      var String = s.substr(num, s.length - 1);
+      s = s.replace(String, "/index.html")
+      window.location.href = s;
+    }
+
+
+    function redirectToLogin() {
+      var s = window.location.href;
+      var s = s + ""
+      var num = s.lastIndexOf("/")
+      var String = s.substr(num, s.length - 1);
+      s = s.replace(String, "/login.html")
+      window.location.href = s;
+    }
+
+    function redirectToSignUp() {
+
+      var s = window.location.href;
+      var s = s + ""
+      var num = s.lastIndexOf("/")
+      var String = s.substr(num, s.length - 1);
+      s = s.replace(String, "/signup.html")
+      window.location.href = s;
+    }
+
+    function redirectToProducts() {
+
+      var s = window.location.href;
+      var s = s + ""
+      var num = s.lastIndexOf("/")
+      var String = s.substr(num, s.length - 1);
+      s = s.replace(String, "/produtos.html")
+      window.location.href = s;
+    }
+
+    function redirectToMobile() {
+
+      var s = window.location.href;
+      var s = s + ""
+      var num = s.lastIndexOf("/")
+      var String = s.substr(num, s.length - 1);
+      s = s.replace(String, "/indexmobile.html")
+      window.location.href = s;
+    }
+
+
+
+  </script>
+
+
+
+
+</body>
+
+</html>

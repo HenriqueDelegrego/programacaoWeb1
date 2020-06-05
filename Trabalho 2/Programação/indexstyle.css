@@ -1,0 +1,130 @@
+.widde {
+  /*
+  width: 50px;
+  */
+}
+
+.over:hover {
+  background-color: rgb(190, 190, 190);
+}
+
+footer {
+  border: 2px gray solid;
+  background-color: rgb(54, 137, 165);
+  font-size: 30px;
+}
+
+img {
+  cursor: pointer;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+}
+
+.dropbtn {
+  border-left: none;
+  background-color: #4CAF50;
+  color: black;
+  padding: 16px;
+  border: none;
+  /*
+  min-width: 200px;
+  */
+  height: 156px;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 30px;
+}
+
+.footer-logo {
+  font-size: 39px;
+  color: rgb(200, 0, 0);
+}
+
+
+.dropup-content {
+  border: solid gray 2px;
+  margin-top: 155px;
+  display: none;
+  
+  position: absolute;
+  
+  background-color: #f1f1f1;
+  min-width: 160px;
+}
+
+.dropup-content a {
+  color: black;
+  font-size: 20px;
+  padding: 7px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropup:hover .dropup-content {
+  display: block;
+}
+
+header {
+  border: 2px gray solid;
+  background-color: rgb(54, 137, 165);
+}
+
+header div {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header a {
+  color: white;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 10px;
+  justify-content: center;
+  display: flex;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+/*foter 
+*/
+.col-33 {
+  float: left;
+    width: 33%;
+    margin-top: 6px;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .col-33{
+      width: 100%;
+      margin-top: 0;
+    }
+  }

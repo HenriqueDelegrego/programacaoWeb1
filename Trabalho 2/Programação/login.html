@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="loginstyle.css">
+
+
+</head>
+
+<body>
+
+    <header class="flex header">
+        <img onclick="redirect()" src="logo.png" width="150" />
+        <span class="borderVerde">Área de login</span>
+
+    </header>
+
+
+    <main class="flex">
+        <div>
+            <p>Email:</p>
+
+            <input type="text" id="email" required>
+
+            <p>Senha:</p>
+
+            <input type="password" id="senha" required>
+
+
+
+            <div class="flex">
+                <button onclick="validateForm()" class="flex">Fazer Login</button>
+            </div>
+
+            <div class="flex">
+                <button onclick="redirectToSignUp()" class="flex">Ainda não tem conta? Cadastre-se</button>
+            </div>
+        </div>
+
+    </main>
+
+
+    <script>
+
+        function validateForm() {
+            var x = document.getElementById("email").value;
+            x = x + ""
+            var Senha = document.getElementById("senha").value;
+            var Senha= Senha+"";
+            /*
+            */
+            if (x.indexOf("@") == -1 || x.indexOf("@") == 0 || x.indexOf(".") == -1) {
+                 
+                alert("Não condiz com um email");
+                return false;
+
+            }
+            if(Senha==""){
+                alert("Senha obigatoria");
+                return false;
+            }
+            /*
+            if(Senha==""){
+                alert("Senha obigatoria");
+                return false;
+            }
+            
+            else{
+            */
+            
+            var s = window.location.href;
+            var s = s + "";
+            var num = s.lastIndexOf("/");
+            var String = s.substr(num, s.length - 1);
+            
+            s = s.replace(String, "/index.html");
+            
+            window.location.href = s;
+        /*
+        alert(s);
+        }  
+        */
+
+        }
+
+        function redirect() {
+
+            var s = window.location.href;
+            var s = s + "";
+            var num = s.lastIndexOf("/");
+            var String = s.substr(num, s.length - 1);
+            s = s.replace(String, "/index.html");
+            window.location.href = s;
+        }
+
+        function redirectToSignUp() {
+            var s = window.location.href;
+            var s = s + ""
+            var num = s.lastIndexOf("/")
+            var String = s.substr(num, s.length - 1);
+            s = s.replace(String, "/signup.html")
+            window.location.href = s;
+        }
+
+      
+
+    </script>
+</body>
+
+</html>
